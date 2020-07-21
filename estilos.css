@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+}
+
+.logo  img {
+    width: 160px;
+    height: 200px;
+    padding: 3px;
+    margin-bottom: 30px;
+}
+/* fondo estatico */
+
+header {
+    width: 100%;
+    height: 650px;
+    background-image: url(img/hero1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 30px;
+}
+
+header .textos {
+    margin-top: 152px;
+}
+
+header .titulo {
+    font-size: 85px;
+}
+
+header .subtitulo {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+
+/* boton blanco y redondeado */
+
+header .boton {
+    display: inline-block;
+    padding: 6px;
+    width: 128px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+}
+
+header .boton:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sesgoabajo {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.sesgoarriba {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 35vh 100vw 0 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 52px 0;
+}
+
+.sobre-nosotros {
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+.slogan {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.parrafo {
+    margin-bottom: 13px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 24px;
+    color: #1a1a1a
+}
+
+.acerca-de .boton {
+    display: inline-block;
+    padding: 6px;
+    width: 128px;
+    font-weight: 300;
+    border: 1px solid #1a1a1a;
+    color: #111;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+    margin-top: 20px;
+}
+
+.acerca-de .boton:hover {
+    text-decoration: none;
+    color: #111;
+}
+
+.galeria {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.imagenes {
+    width: 20%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagenes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* colocar el texto dentro de la imagen con un RGBA */
+.encima {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(31, 127, 200, 0.678);
+}
+
+/* texto dentro de la imagen del centro */
+.encima h2 {
+    position: relative;
+    top: 45%;
+    text-align: center;
+    color: #fff;
+}
+
+/* guion bajo Lisboa Design */
+.encima div {
+    position: relative;
+    display: block;
+    top: 46%;
+    width: 40px;
+    height: 5px;
+    background: #fff;
+    margin: auto;
+}
+
+/* cuadro de conoce nuestro equipo */
+.cards {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* tarjeta */
+.card {
+    margin: 20px 0;
+    width: 30%;
+    height: 250px;
+    text-align: center;
+    padding:  20px;
+    box-shadow: 0px 0px 4px 0 #1a1a1a;
+    background-color: #0a3d62
+}
+
+/* imagen redondeada */
+.card img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 100%;
+    align-self: center;
+}
+
+.card p {
+    font-size: 15px;
+    font-weight: 480;
+    margin-top: none;
+    color: #dfe6e9;
+}
+
+.card h4 {
+    margin-top: 15px;
+    color: #dfe6e9;
+}
+
+/* clase fondo y sus patrocinadores */
+.fondo {
+    height: 900px;
+    position: relative;
+    background-image: url(img/hero1.jpg);
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 130px;
+    background-size: cover;
+}
+
+.sesgoabajo-unico{
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #0a3d62 transparent;
+}
+
+.titulo-patrocinadores, .subtitulo-patrocinadores {
+    color: #fff;
+    text-align: center;
+}
+
+.titulo-patrocinadores {
+    font-size: 56px;
+    margin-top: 48px;
+}
+
+.subtitulo-patrocinadores {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 64px;
+}
+
+.clientes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cliente {
+    width: 30%;
+}
+.cliente img{
+    width: 70%;
+}
+
+/* footer */
+footer {
+    background-color: #0a3d62;
+    height: auto;
+}
+
+.titulo-footer, .subtitulo-footer {
+    color: #fff;
+    text-align: center;
+    font-size: 56px;
+}
+
+.subtitulo-footer {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 64px;
+}
+.titulo-footer {
+    letter-spacing: 4px;    
+}
+
+form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+input[type="text"], input[type="email"] {
+    display: inline-block;
+    width: 48%;
+    padding: 13px;
+    border: none;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    background: #1f1f1f;
+    margin-bottom: 16px;
+    border-top: 1px solid #1f1f1f;
+} 
+
+textarea {
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+    background: #1f1f1f;
+    padding: 13px;
+    border: none;
+    color: #fff;
+    font-family: 'Titilium Web', sans-serif;
+    margin-bottom: 16px;
+}
+
+/* quitar efecto de focus en cuadros de texto */
+textarea:focus {
+    outline: none;
+}
+
+input[type="text"], input[type="email"]:focus {
+    outline: none;
+}
+
+input[type="submit"] {
+    display: inline-block ;
+    padding: 13px;
+    border: none;
+    color: #fff;
+    background: #1f1f1f;
+    width: 96px;
+}
+
+@media (max-width: 900px) {
+    .card {
+        width: 48%;
+
+}
+
+}
+@media screen and (max-width: 610px) {
+    header .textos {
+        margin-top: 130px;
+    }
+    header .titulo {
+        font-size: 75px;
+    }
+    .none {display: none;
+    }
+    
+    .card {
+        width: 90%;
+    }
+    .imagenes{
+        flex-grow: 1;
+    }
+    
+    .fondo h3 {
+        font-size: 20px;
+    }
+
+    .especial {
+        display: none;  
+    }
+
+    .cliente {
+        width: 70%;
+        height: 90px;
+        margin-bottom: 10px;
+    }
+    .cliente img {
+        height: 85px;
+        width: 85px;
+        margin-bottom: 2px;
+        margin: auto;
+        display: flex;
+        
+    }
+    
+}
+@media screen and (max-width: 380px) {
+    header .textos {
+        margin-top: 100px;
+    }
+    header .titulo {
+        font-size: 65px;
+    }
+    header .subtitulo {
+        font-size: 25px;
+        margin-bottom: 32px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .sobre-nosotros {
+        font-size: 46px;
+    }
+    .slogan {
+        font-size: 20px;
+    }
+
+    .titulo-patrocinadores {
+        font-size: 46px;
+    }
+
+    .subtitulo-patrocinadores {
+        font-size: 20px;
+    }
+    
+    .encima h2 {
+        font-size: 25px;
+    }
+}
